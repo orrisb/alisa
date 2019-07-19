@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/menu.css" rel="stylesheet" />
+
+<title>Kyte'it</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery.min.js" type="text/javascript"></script>
+<script src="modernizr-custom.js"></script>
+<meta name="description" content="A place to send letters, money and photos to your loved ones who are Incarcerated">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+<header id="header" class="headerStyle">
+        <form method="get" action="https://www.google.com/search">
+		  <input type="text" name="q" size="15" maxlength="255" value"" placeholder="Search"/>
+		  <input type="submit" value="GO"/>
+		  <input type="hidden" name="sitesearch" value="www.google.com"/>
+		</form>		
+</header>
+
+<section id="navigation" class="leftSection">
+<p id="CompanyName" class="companyNameStyle">KYTE'IT</p>
+
+ <nav id="NavigationLink" style="" class="navigationStyle">
+ <a class="standardTabEffect" href="default.html">Home</a>
+<a class="standardTabEffect" href="products.html">Products</a>
+<a class="standardTabEffect" href="news.html">News</a>
+<a class="standardTabEffect" href="contactUs.html">Contact Us</a>
+</nav>
+</section>
+
+<section>
+    <div id="section_articleOneIdentifier" style="position: absolute; left: 355px; top: 105px; width: 1px; height: 60px; z-index: 3">
+	    <hr class="style2" style="height: 60px; width: 1px"/>
+	</div>
+	
+	<article id="article_one" style="position: absolute; left: 420px; top: 100px; width: 315px; height: 195px; z-index: 2">
+	    <h1><mark>Contact Us</mark></h1>
+		
+		
+	</article>
+    <div id="section_articleOneIdentifier" style="position: absolute; left: 355px; top: 355px; width: 1px; height: 60px; z-index: 3">
+	    <hr class="style2" style="height: 60px; width: 1px"/>
+	</div>
+	<article id="article_two" style="position: absolute; left: 420px; top: 350px; width: 315px; height: 195px; z-index: 2">
+	    <h1><mark>Contact Us</mark></h1>
+		<p>For more information, contact us:</p>
+		
+		<form method="POST" action="http://fpl.formmail.com/cgi-bin/fm192">
+				<input type="hidden" name="_pid" value="119137">
+	        	<input type="hidden" name="_fid" value="FNNZXGED">
+				<input type="hidden" name="recipient" value="elwin888@gmail.com">
+				<label>First Name</label><br/>
+				<input name="FirstName" type="text" maxlength="25" required><br/><br/>
+				<label>Middle Name</label><br/>
+				<input name="MiddleName" type="text"disabled><br/><br/>
+        		<label>Last Name</label><br/>
+				<input name="LastName" type="text" maxlength="25" required><br/><br/>
+				<label>Age:</label><br/>
+				<input name="age" type="number" min="18" max="100"><br/><br/>
+		        <label>Email</label><br/><input name="Email" type="email" required><br/><br/>
+                <label>How did you hear about us:</label><br/>
+                <input name="HowDidYouHear" type="uri" list="mylist"><br/><br/>
+				<datalist id="mylist">
+   		        <option label="google" value="http://google.com">
+		        <option label="yahoo" value="http://yahoo.com">
+		        <option label="Bing" value="http://bing.com">
+		        </datalist>
+				<label>When would you like us to contact you:</label><br/>
+				<input name="ContactDate" validation="required" type="date"><br/><br/>
+		        <label>How many of our services do you use:</label><br/>
+		        <input id="slider" name="sliderValue" type="range" min="0" max="10" value="5"></input>
+		        <output name ="NumberOfServices" value="5" onforminput="value=sliderValue.value">5</output><br/><br/>
+		        <div class="submit-area">
+				<input value="validate on Submit" type="submit"/>
+				<script>
+				var thisForm = $("#html5Form");
+				thisForm.validation();
+				</script>
+				</div>
+		        </form>
+		
+	</article>
+    <hr class="HRstyle" style="position: absolute; left: 420px; top: 360px; width: 315px; height: 2px; z-index: 3"/>    
+</section>
+    <script src="js/jquery.formvalidation.js"></script>
+</body>
+
+</html>
